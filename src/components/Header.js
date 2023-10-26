@@ -1,6 +1,6 @@
 import React from "react"
-import { NavLink, Navbar, NavbarBrand } from "reactstrap"
-
+import { Navbar, NavbarBrand } from "reactstrap"
+import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
@@ -9,16 +9,16 @@ const Header = () => {
               Twilight Towers
             </NavbarBrand>
             <div className="text-container">
-              <NavLink href="/aptindex" id="nav-text">
+              <NavLink to={/aptindex/} id="nav-text">
                 View Apartments
               </NavLink>
-              <NavLink href="/aptnew" id="nav-text">
+              <NavLink to={/aptnew/} id="nav-text">
                 Add Apartments 
               </NavLink>
-              <NavLink href="/signin" id="nav-text">
+              <NavLink to={/signin/} id="nav-text">
                 Sign In
             </NavLink>
-            <NavLink href="/signup" id="nav-text">
+            <NavLink to={/signup/} id="nav-text">
                 Sign Up
             </NavLink>
             </div>
