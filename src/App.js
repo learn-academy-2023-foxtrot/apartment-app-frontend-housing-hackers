@@ -6,6 +6,7 @@ import ApartmentIndex from "./pages/ApartmentIndex"
 import ApartmentNew from "./pages/ApartmentNew"
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         <Route path="/aptnew" element={<ApartmentNew />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+      
       </Routes>
+      <Footer />
     </>
   );
 }
