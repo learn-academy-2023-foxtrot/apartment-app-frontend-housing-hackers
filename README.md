@@ -47,3 +47,6 @@ describe("<Header />", () => {
 })
 ```
 
+We then added the footer with our names and team name. 
+
+Afterwards, we started working on the home page and the not found page along with the testing for them. 
