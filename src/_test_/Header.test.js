@@ -1,25 +1,3 @@
-# React Front End
-
-```git
-$ yarn create react-app apartment-app-frontend
-$ cd apartment-app-frontend
-$ yarn add react-router-dom
-$ yarn add bootstrap
-$ yarn add reactstrap
-```
-Add to src/index.js: import 'bootstrap/dist/css/bootstrap.min.css'
-```git
-$ yarn start
-```
-Add the remote from your GitHub classroom repository
-Create a default branch (main)
-Make an initial commit to the repository
-Ask your instructors for branch protection
-
-We added components to src. The components, pages, assets folder. Then we added the basic structure to each file inside of the components. 
-
-Then we worked on the header. Made it beautiful and then did the testing for it. 
-```jsx
 import { render, screen } from "@testing-library/react"
 import { BrowserRouter } from "react-router-dom"
 import Header from  "../components/Header"
@@ -45,5 +23,3 @@ describe("<Header />", () => {
         expect(indexLink).toHaveAttribute("href", "/aptnew")
     })
 })
-```
-
