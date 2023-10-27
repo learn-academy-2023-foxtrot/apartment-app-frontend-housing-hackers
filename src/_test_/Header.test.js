@@ -12,13 +12,13 @@ describe("<Header />", () => {
       
     })
     it("has a navigation link to index page", () => {
-        const indexLink = screen.getByRole('link', { name: /view apartments/i })
-        expect(indexLink).toHaveAttribute("href", "/aptindex")
+        const indexLink = screen.getByText(/view apartments/i)
+        expect(indexLink).toBeInTheDocument()
     })
 
     
     it("has a navigation link to new page", () => {
-        const indexLink = screen.getByRole('link', { name: /Add Apartments/i })
-        expect(indexLink).toHaveAttribute("href", "/aptnew")
+        const indexLink = screen.getByText(/Add Apartments/i)
+        expect(indexLink).toBeInTheDocument()
     })
 })

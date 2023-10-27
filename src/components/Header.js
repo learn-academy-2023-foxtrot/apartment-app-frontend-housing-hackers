@@ -9,16 +9,16 @@ const Header = () => {
               Twilight Towers
             </NavbarBrand>
             <div className="text-container">
-              <NavLink to={/aptindex/} id="nav-text">
+              <NavLink to="/aptindex/" id="nav-text">
                 View Apartments
               </NavLink>
-              <NavLink to={/aptnew/} id="nav-text">
+              <NavLink to="/aptnew/" id="nav-text">
                 Add Apartments 
               </NavLink>
-              <NavLink to={/signin/} id="nav-text">
+              <NavLink to="/signin/" id="nav-text">
                 Sign In
             </NavLink>
-            <NavLink to={/signup/} id="nav-text">
+            <NavLink to="/signup/" id="nav-text">
                 Sign Up
             </NavLink>
             </div>
