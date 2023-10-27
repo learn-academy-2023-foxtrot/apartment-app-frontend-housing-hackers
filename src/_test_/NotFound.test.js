@@ -6,11 +6,9 @@ describe("<NotFound />", () => {
     it("renders an image on the not found page", () => {
         render(
             <BrowserRouter>
-            <NotFound />
+                <NotFound />
             </BrowserRouter>
         )
-     screen.debug()
-     screen.logTestingPlaygroundURL()
 
      const notFoundImage = screen.getByRole('img', { name: /404 image/i })
      expect(notFoundImage).toBeInTheDocument()

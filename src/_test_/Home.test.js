@@ -6,10 +6,10 @@ describe("<Home />", () => {
     it("renders a introduction", () => {
         render(
             <BrowserRouter>
-            <Home/>
+                <Home/>
             </BrowserRouter>
         )
-        screen.logTestingPlaygroundURL()
+
         const homeHeading = screen.getByRole("heading", {
             name: "Find your new apartment here at Twilight Towers!"
         })
