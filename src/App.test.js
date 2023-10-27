@@ -9,7 +9,7 @@ test('renders learn react link', () => {
     </BrowserRouter>
   )
   const greeting = screen.getByRole("heading", {
-    name: /home page/i
+    name: /Find your new apartment here at Twilight Towers!/i
   })
   expect(greeting).toBeInTheDocument();
 });
